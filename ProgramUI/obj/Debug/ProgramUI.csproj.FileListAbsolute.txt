@@ -1,0 +1,6 @@
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\ProgramUI\bin\Debug\ProgramUI.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\ProgramUI\bin\Debug\ProgramUI.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\ProgramUI\obj\Debug\ProgramUI.csproj.AssemblyReference.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\ProgramUI\obj\Debug\ProgramUI.csproj.CoreCompileInputs.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\ProgramUI\obj\Debug\ProgramUI.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\ProgramUI\obj\Debug\ProgramUI.pdb

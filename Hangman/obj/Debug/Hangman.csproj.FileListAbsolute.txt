@@ -1,0 +1,10 @@
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\bin\Debug\Hangman.exe.config
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\bin\Debug\Hangman.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\bin\Debug\Hangman.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\obj\Debug\Hangman.csproj.AssemblyReference.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\obj\Debug\Hangman.csproj.CoreCompileInputs.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\obj\Debug\Hangman.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\obj\Debug\Hangman.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\bin\Debug\ProgramUI.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\bin\Debug\ProgramUI.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\Hangman\obj\Debug\Hangman.csproj.CopyComplete
