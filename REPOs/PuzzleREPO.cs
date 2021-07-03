@@ -7,21 +7,18 @@ using System.Threading.Tasks;
 
 namespace REPOs
 {
-    public class PuzzleREPO
+    class PuzzleREPO
     {
-        private readonly List<Puzzle> _puzzle = new List<Puzzle>();
-        //create word
-        public void AddWordToList(Puzzle puzzleWord)
+
+        Puzzle puzzleWord = new Puzzle();
+        //read
+        public string ReadWord()
         {
-            _puzzle.Add(puzzleWord);
+            string w = (string)puzzleWord.Puzzleword;
+            return w;
         }
 
-        //read word
 
-        public List<Puzzle> ReadWordFromList()
-        {
-            return _puzzle;
-        }
 
     }
 }

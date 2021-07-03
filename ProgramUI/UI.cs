@@ -1,4 +1,5 @@
 ﻿using REPOs;
+using GuessesPOCO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,50 +11,31 @@ namespace ProgramUI
 
     public class UI
     {
-
+        GuessesREPO guessesRepo = new GuessesREPO();
+        bool stillAlive = true;
         public void Run()
         {
-            
-            GuessesREPO guessesRepo = new GuessesREPO();
-            bool stillAlive = true;
-            int numOfWrongGuesses = 0;
-            char userInput;
-          
-
-            Console.WriteLine("What letter is your guess?");
-            userInput = char.Parse(Console.ReadLine());
-
-            
-            foreach(char c in GuessesREPO.puzzleWord)
-            {
-                if (stillAlive)
-                {
-                    if ()
-                    if (userInput == c)
-                    {
-                        Console.WriteLine("Correct!");
-
-                    }
-                    else
-                    {
-                        Console.WriteLine("That is not correct.");
-                        numOfWrongGuesses += 1;
-                        stillAlive = GuessesREPO.UpdateStillAlive(numOfWrongGuesses);
-                    }
-                         
-                }
-            }
-
-            
-
-            
-
-
-
-
-
-            Console.ReadKey();
+            AddWordToPuzzle();
+            RunGame();
         }
 
+        private void RunGame()
+        {
+
+            string c = GetPuzzle();
+        }
+
+        private string GetPuzzle()
+        {
+            
+        }
+
+        private void AddWordToPuzzle()
+        {
+            
+        }
+
+        
+        
     }
 }

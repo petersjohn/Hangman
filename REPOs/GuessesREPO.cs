@@ -27,7 +27,7 @@ namespace REPOs
         {
             _guesses.Add(guessLetter);
         }
-        //show new list of guessed letters
+        
 
         //update stillAlive
         public bool UpdateStillAlive(int numOfWrongGuesses)
