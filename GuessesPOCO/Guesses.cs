@@ -8,11 +8,11 @@ namespace GuessesPOCO
 {
     public class Guesses
     {
-        public char LetterGuessed { get; set; }
+        public char GussedLetter { get; set; }
 
         public Guesses(char guessedLetter)
         {
-            LetterGuessed = guessedLetter;
+            GussedLetter = guessedLetter;
         }
 
 
