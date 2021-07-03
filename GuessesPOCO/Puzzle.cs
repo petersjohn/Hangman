@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace GuessesPOCO
 {
-    class Puzzle
+    public class Puzzle
     {
-        public string Word { get; set; }
+        public string Puzzleword { get; set; }
 
         public Puzzle(string puzzleWord)
         {
-            Word = puzzleWord;
+            Puzzleword = puzzleWord;
 
         }
     }
