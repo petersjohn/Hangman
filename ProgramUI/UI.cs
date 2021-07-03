@@ -15,16 +15,32 @@ namespace ProgramUI
         {
             
             GuessesREPO guessesRepo = new GuessesREPO();
+            bool stillAlive = true;
+            int numOfWrongGuesses = 0;
+            char userInput;
+          
 
             Console.WriteLine("What letter is your guess?");
-            char userInput = Char.Parse(Console.ReadLine());
+            userInput = char.Parse(Console.ReadLine());
 
-            string puzzleWord = 
-            foreach(char c in puzzleWord)
+            
+            foreach(char c in GuessesREPO.puzzleWord)
             {
                 if (stillAlive)
                 {
-                    
+                    if ()
+                    if (userInput == c)
+                    {
+                        Console.WriteLine("Correct!");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("That is not correct.");
+                        numOfWrongGuesses += 1;
+                        stillAlive = GuessesREPO.UpdateStillAlive(numOfWrongGuesses);
+                    }
+                         
                 }
             }
 

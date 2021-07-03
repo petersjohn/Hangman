@@ -9,7 +9,7 @@ namespace REPOs
 {
     public class GuessesREPO
     {
-        Dictionary<int, string> ListOfWords = new Dictionary<int, string>
+        public Dictionary<int, string> ListOfWords = new Dictionary<int, string>
             {
                 {1, "watermelon" },
                 {2, "Bird" },
@@ -60,7 +60,8 @@ namespace REPOs
         
 
         //Method to pull word from Dictionary
-        string Puzzle()
+        
+        public string Puzzle()
         {
             string puzzleWord;
             {
@@ -86,7 +87,16 @@ namespace REPOs
 
         //show new list of guessed letters
 
-
+        //update stillAlive
+        public bool UpdateStillAlive(int numOfWrongGuesses)
+        {
+            if (numOfWrongGuesses == 7)
+            {
+                return false;
+            }
+            else
+                return true;
+        }
         
 
     }
