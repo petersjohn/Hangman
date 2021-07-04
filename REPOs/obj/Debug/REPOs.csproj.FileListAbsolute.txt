@@ -1,0 +1,9 @@
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\bin\Debug\REPOs.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\bin\Debug\REPOs.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\bin\Debug\GuessesPOCO.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\bin\Debug\GuessesPOCO.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\obj\Debug\REPOs.csproj.AssemblyReference.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\obj\Debug\REPOs.csproj.CoreCompileInputs.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\obj\Debug\REPOs.csproj.CopyComplete
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\obj\Debug\REPOs.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\REPOs\obj\Debug\REPOs.pdb

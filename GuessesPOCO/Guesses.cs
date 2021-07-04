@@ -9,6 +9,7 @@ namespace GuessesPOCO
     public class Guesses
     {
         public char GuessedLetter { get; set; }
+        
 
         public Guesses(char guessedLetter)
         {

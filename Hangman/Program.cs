@@ -12,7 +12,7 @@ namespace Hangman
         static void Main(string[] args)
         {
             UI ui = new UI();
-            ui.Run();
+            ui.SetupAndStart();
           }
     }
 }

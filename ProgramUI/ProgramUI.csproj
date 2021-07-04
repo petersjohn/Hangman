@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GuessesPOCO\POCOs.csproj">
+      <Project>{13FE1E60-8BEF-40CF-AE6F-868BE9CE3408}</Project>
+      <Name>POCOs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\REPOs\REPOs.csproj">
       <Project>{3c743089-e9c6-4609-ac81-bc43fb8d6fbd}</Project>
       <Name>REPOs</Name>

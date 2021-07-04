@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace REPOs
 {
-    class PuzzleREPO
+    public class PuzzleREPO
     {
-
-        Puzzle puzzleWord = new Puzzle();
-        //read
+        public Puzzle puzzleWord = new Puzzle();
+        
         public string ReadWord()
         {
             string w = (string)puzzleWord.Puzzleword;

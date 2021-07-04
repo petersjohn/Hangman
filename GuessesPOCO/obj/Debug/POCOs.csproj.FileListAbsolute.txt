@@ -1,0 +1,6 @@
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\GuessesPOCO\bin\Debug\GuessesPOCO.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\GuessesPOCO\bin\Debug\GuessesPOCO.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\GuessesPOCO\obj\Debug\POCOs.csproj.AssemblyReference.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\GuessesPOCO\obj\Debug\POCOs.csproj.CoreCompileInputs.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\GuessesPOCO\obj\Debug\GuessesPOCO.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\Hangman\GuessesPOCO\obj\Debug\GuessesPOCO.pdb

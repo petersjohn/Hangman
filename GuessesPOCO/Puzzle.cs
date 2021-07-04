@@ -28,6 +28,11 @@ namespace GuessesPOCO
             Puzzleword = puzzleWord;
 
         }
+
+        public Puzzle()
+        {
+        }
+
         public string getWordFromDictionary()
         {
             Random wordNum = new Random();
@@ -39,15 +44,15 @@ namespace GuessesPOCO
         public Dictionary<int, string> ListOfWords = new Dictionary<int, string>
             {
                 {1, "watermelon" },
-                {2, "Bird" },
-                {3, "Beer" },
-                {4, "Swimming" },
-                {5, "Dictionary" },
-                {6, "Photosynthesis" },
-                {7, "Legume" },
-                {8, "Garden" },
-                {9, "House" },
-                {10, "Shark" },
+                {2, "bird" },
+                {3, "beer" },
+                {4, "swimming" },
+                {5, "dictionary" },
+                {6, "photosynthesis" },
+                {7, "legume" },
+                {8, "garden" },
+                {9, "house" },
+                {10, "shark" },
             };
     }
    
