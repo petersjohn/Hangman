@@ -15,6 +15,8 @@ namespace ProgramUI
 
         PuzzleREPO puzzleRepo = new PuzzleREPO();
 
+        GallowsREPO gallowsRepo = new GallowsREPO();
+
         public readonly List<Guesses> _guessesList = new List<Guesses>();
         
         public int incorrectGuessCnt;
@@ -64,8 +66,19 @@ namespace ProgramUI
                     incorrectGuessCnt = incorrectGuessCnt + 1;
                     if (!guessesRepo.UpdateStillAlive(incorrectGuessCnt))
                     {
-                        Console.WriteLine("Ha Ha you lose! Press any key to go home and cry.");
-                        Console.ReadKey();
+                        Console.Clear();
+                        gallowsRepo.GetRightLeg();
+                        Console.WriteLine($"Ha Ha you lose!.\n" +
+                            $"Press any Key to go home and cry.");
+                        /*string x = Console.ReadLine();
+                        bool input = Convert.ToBoolean(x);
+                        bool y = true;
+                        bool n = false;
+                        if (y)
+                        {
+                            PlayAgain();
+                        }
+                        else */  
                          stillAlive = false;
                     }
                     else
@@ -90,9 +103,8 @@ namespace ProgramUI
                     }
                     if (CheckForWin(currentPuzzle, returnStr))
                     {
-                        Console.WriteLine("You did it!! Press any key to exit.");
-                        Console.ReadKey();
-                        stillAlive = false;
+                        
+                        
                     }
                     else 
                     {
@@ -192,12 +204,45 @@ namespace ProgramUI
             return false;
                 
         }
+
+        public void PlayAgain()
+        {
+            SetupAndStart();
+        }
         public char EnterLetter()
         {
             int guessesLeft = 6 - incorrectGuessCnt;
             string guessesLeftStr = guessesLeft.ToString();
             string guessString = BuildGuessString();
             Console.Clear();
+            switch (incorrectGuessCnt)
+            {
+                case 0:
+                    gallowsRepo.BuildGallows();
+                    break;
+                case 1:
+                    gallowsRepo.GetHead();
+                    break;
+                case 2:
+                    gallowsRepo.GetBody();
+                    break;
+                case 3:
+                    gallowsRepo.GetLeftArm();
+                    break;
+                case 4:
+                    gallowsRepo.GetRightArm();
+                    break;
+                case 5:
+                    gallowsRepo.GetLeftLeg();
+                    break;
+                case 6:
+                    gallowsRepo.GetRightLeg();
+                    break;
+
+
+
+
+            }
             Console.WriteLine($"Puzzle:   {returnStr}\n" +
                 $"Guesses:   {guessString}\n" +
                 $"Strikes Left:    {guessesLeft}\n" +
