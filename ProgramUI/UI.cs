@@ -1,4 +1,4 @@
-﻿using REPOs;
+using REPOs;
 using GuessesPOCO;
 using System;
 using System.Collections.Generic;
@@ -18,11 +18,11 @@ namespace ProgramUI
         GallowsREPO gallowsRepo = new GallowsREPO();
 
         public readonly List<Guesses> _guessesList = new List<Guesses>();
-        
+
         public int incorrectGuessCnt;
-        
+
         public string returnStr;
-        
+
         bool stillAlive = true;
 
 
@@ -78,15 +78,15 @@ namespace ProgramUI
                         {
                             PlayAgain();
                         }
-                        else */  
-                         stillAlive = false;
+                        else */
+                        stillAlive = false;
                     }
                     else
                     {
                         Console.WriteLine("LOL, nope. Press any key to continue");
                         Console.ReadLine();
                     };
-                    
+
 
                 }
                 else
@@ -103,18 +103,18 @@ namespace ProgramUI
                     }
                     if (CheckForWin(currentPuzzle, returnStr))
                     {
-                        
-                        
+
+
                     }
-                    else 
+                    else
                     {
                         Console.WriteLine("Got one! Press any key to continue.");
                         Console.ReadLine();
                     }
-                    
-                    
 
-                    
+
+
+
 
                 }
 
@@ -122,7 +122,7 @@ namespace ProgramUI
 
         }
 
-       
+
         public bool ValidateGuess(char letter, string puzzle)
         {
             foreach (char c in puzzle)
@@ -155,7 +155,7 @@ namespace ProgramUI
         {
             List<Guesses> guess = guessesRepo.ReadListOfGuesses();
             string guessString = " ";
-            if(guess.Count > 0)
+            if (guess.Count > 0)
             {
                 foreach (var item in guess)
                 {
@@ -163,7 +163,7 @@ namespace ProgramUI
                 }
             }
             return guessString;
-            
+
 
 
 
@@ -186,20 +186,28 @@ namespace ProgramUI
             for (int idx = 0; idx < puzzle.Length; idx++)
 
             {
-                returnStr += "*";
+                //returnStr += "*";
+                returnStr = puzzle.Replace('p', '*').Replace('e', '*').Replace('l', '*')
+                    .Replace('m', '*').Replace('a', '*').Replace('n', '*').Replace('s', '*')
+                    .Replace('w', '*').Replace('b', '*').Replace('k', '*').Replace('t', '*');
+
             }
             Console.WriteLine($"Welcome to Console Hangman!\n" +
                 $"Press Any Key to Continue");
             Console.ReadKey();
-           
 
-         }
+
+        }
+    
+
+
 
         public bool CheckForWin(string puzzle, string returnString)
         {
             if (puzzle == returnString)
             {
                 return true;
+
             }
             return false;
                 
@@ -252,6 +260,7 @@ namespace ProgramUI
 
             return userInput;
         }
+
     }
 }
 
