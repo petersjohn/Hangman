@@ -18,11 +18,11 @@ namespace ProgramUI
         GallowsREPO gallowsRepo = new GallowsREPO();
 
         public readonly List<Guesses> _guessesList = new List<Guesses>();
-        
+
         public int incorrectGuessCnt;
-        
+
         public string returnStr;
-        
+
         bool stillAlive = true;
 
 
@@ -48,7 +48,8 @@ namespace ProgramUI
         {
             string currentPuzzle = puzzle;
 
-            char guess = EnterLetter();
+            char guess = EnterLetter(currentPuzzle);
+
 
             if (GetGuessByLetter(guess) != null)
             {
@@ -70,6 +71,7 @@ namespace ProgramUI
                         gallowsRepo.GetRightLeg();
                         Console.WriteLine($"Ha Ha you lose!.\n" +
                             $"Press any Key to go home and cry.");
+                        Console.ReadKey();
                         /*string x = Console.ReadLine();
                         bool input = Convert.ToBoolean(x);
                         bool y = true;
@@ -78,17 +80,18 @@ namespace ProgramUI
                         {
                             PlayAgain();
                         }
-                        else */  
-                         stillAlive = false;
+                        else */
+                        stillAlive = false;
                     }
                     else
                     {
                         Console.WriteLine("LOL, nope. Press any key to continue");
                         Console.ReadLine();
                     };
-                    
+
 
                 }
+
                 else
                 {
                     StringBuilder sb = new StringBuilder(returnStr);
@@ -99,30 +102,29 @@ namespace ProgramUI
                             sb[idx] = guess;
                             returnStr = sb.ToString();
                         }
-
                     }
+
                     if (CheckForWin(currentPuzzle, returnStr))
                     {
-                        
-                        
+                        Console.Clear();
+                        Console.WriteLine($"Puzzle:  {returnStr}\n" +
+                            $"Congratulations! Winner, Winner Chicken Dinner!\n" +
+                            $"Press any key to exit.");
+                        Console.ReadKey();
+                        stillAlive = false;
                     }
-                    else 
+                    else
                     {
                         Console.WriteLine("Got one! Press any key to continue.");
-                        Console.ReadLine();
+                        Console.ReadKey();
                     }
-                    
-                    
-
-                    
 
                 }
-
             }
 
         }
 
-       
+
         public bool ValidateGuess(char letter, string puzzle)
         {
             foreach (char c in puzzle)
@@ -155,7 +157,7 @@ namespace ProgramUI
         {
             List<Guesses> guess = guessesRepo.ReadListOfGuesses();
             string guessString = " ";
-            if(guess.Count > 0)
+            if (guess.Count > 0)
             {
                 foreach (var item in guess)
                 {
@@ -163,7 +165,7 @@ namespace ProgramUI
                 }
             }
             return guessString;
-            
+
 
 
 
@@ -191,9 +193,9 @@ namespace ProgramUI
             Console.WriteLine($"Welcome to Console Hangman!\n" +
                 $"Press Any Key to Continue");
             Console.ReadKey();
-           
 
-         }
+
+        }
 
         public bool CheckForWin(string puzzle, string returnString)
         {
@@ -202,14 +204,14 @@ namespace ProgramUI
                 return true;
             }
             return false;
-                
+
         }
 
         public void PlayAgain()
         {
             SetupAndStart();
         }
-        public char EnterLetter()
+        public char EnterLetter(string puzzle)
         {
             int guessesLeft = 6 - incorrectGuessCnt;
             string guessesLeftStr = guessesLeft.ToString();
@@ -238,20 +240,20 @@ namespace ProgramUI
                 case 6:
                     gallowsRepo.GetRightLeg();
                     break;
-
-
-
-
             }
-            Console.WriteLine($"Puzzle:   {returnStr}\n" +
-                $"Guesses:   {guessString}\n" +
-                $"Strikes Left:    {guessesLeft}\n" +
-                $"Please Enter A Letter: ");
-            //Console.WriteLine("Please Enter A Letter: ");
-            char userInput = Char.Parse(Console.ReadLine());
+                Console.WriteLine($"Puzzle:   {returnStr}\n" +
+                        $"Guesses:   {guessString}\n" +
+                        $"Strikes Left:    {guessesLeft}\n" +
+                        $"Please Enter A Letter: ");
+                    //Console.WriteLine("Please Enter A Letter: ");
+                    char userInput = Char.Parse(Console.ReadLine());
 
-            return userInput;
+                    return userInput;
+            
+
         }
     }
+
 }
+
 
