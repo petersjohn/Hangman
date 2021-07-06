@@ -1,4 +1,4 @@
-﻿using REPOs;
+using REPOs;
 using GuessesPOCO;
 using System;
 using System.Collections.Generic;
@@ -106,18 +106,24 @@ namespace ProgramUI
 
                     if (CheckForWin(currentPuzzle, returnStr))
                     {
+
                         Console.Clear();
                         Console.WriteLine($"Puzzle:  {returnStr}\n" +
                             $"Congratulations! Winner, Winner Chicken Dinner!\n" +
                             $"Press any key to exit.");
                         Console.ReadKey();
                         stillAlive = false;
+
+
+
+
                     }
                     else
                     {
                         Console.WriteLine("Got one! Press any key to continue.");
                         Console.ReadKey();
                     }
+
 
                 }
             }
@@ -188,7 +194,11 @@ namespace ProgramUI
             for (int idx = 0; idx < puzzle.Length; idx++)
 
             {
-                returnStr += "*";
+                //returnStr += "*";
+                returnStr = puzzle.Replace('p', '*').Replace('e', '*').Replace('l', '*')
+                    .Replace('m', '*').Replace('a', '*').Replace('n', '*').Replace('s', '*')
+                    .Replace('w', '*').Replace('b', '*').Replace('k', '*').Replace('t', '*');
+
             }
             Console.WriteLine($"Welcome to Console Hangman!\n" +
                 $"Press Any Key to Continue");
@@ -202,6 +212,7 @@ namespace ProgramUI
             if (puzzle == returnString)
             {
                 return true;
+
             }
             return false;
 
@@ -252,6 +263,7 @@ namespace ProgramUI
             
 
         }
+
     }
 
 }
